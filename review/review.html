@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write-review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            /* background-color: #f9f9f9; */
+            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .header {
+            /* background-color: #4CAF50; */
+            background-color: #00796b;
+            padding: 15px ;
+            padding-right:780px;
+            font-size: 24px;
+            /* font-size: 1.8em; */
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            color: white;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0.1, 0.1, 0.1, 0.1);
+        }
+        .container h2 {
+            margin-bottom: 15px;
+            /* margin-right:500px; */
+            text-align:left;
+            font-size: 30px;
+            font-weight:bold;
+            color: #333;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            background: #fff;
+        }
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 8px;
+            font-size: 14px;
+        }
+        .suggestions {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .suggestions button {
+            background-color: #fff;
+            border: 1px solid  #00796b;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #00796b;
+            transition: 0.2s;
+        }
+        .suggestions button:hover {
+            background-color: #00796b;
+            color: white;
+        }
+        .footer {
+            margin-top: auto;
+            padding: 10px;
+            background-color: white;
+            font-size: 12px;
+            color: #666;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            .search-box input {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">GLOBAL REVIEW</div>
+    <div class="container">
+        <h2>What are you reviewing?</h2>
+        <div class="search-box">
+            <!-- <input type="text" placeholder="Example: iPhone, Australia Post, Harvey Norman"> -->
+            <a href="review2.html" class="custom-input" onclick="activateInput()"><input type="text" placeholder="Example: iPhone, Australia Post, Harvey Norman"></a>
+            <input type="text" id="hidden-text-input" placeholder="Example: iPhone, Australia Post, Harvey Norman" style="display: none;" onblur="hideInput()">
+            
+        </div>
+        <div class="suggestions">
+            <button>iPhone</button>
+            <button>Washing Machines</button>
+            <button>Clothes Dryers</button>
+            <button>Vacuum Cleaners</button>
+            <button>TVs</button>
+            <button>Prams & Strollers</button>
+            <button>Tyres</button>
+            <button>Sedans</button>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 ProductReview.com.au. All Rights Reserved. 
+    </div>
+</body>
+</html>

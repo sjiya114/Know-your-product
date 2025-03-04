@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a Review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* .header {
+            background-color: #00796b;
+            padding: 15px;
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        } */
+        .header {
+            /* background-color: #4CAF50; */
+            background-color: #00796b;
+            padding: 15px ;
+            padding-right:780px;
+            font-size: 24px;
+            /* font-size: 1.8em; */
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            color: white;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .review-container {
+            background: white;
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 80px; /* Adjusted to sit below the navbar */
+        }
+        .review-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .review-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #00796b;
+            font-size: 24px;
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 6px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #b2dfdb;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: 0.3s;
+            background: #f1f1f1;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #00796b;
+            outline: none;
+            box-shadow: 0px 0px 8px rgba(0, 121, 107, 0.3);
+            background: white;
+        }
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            max-width: 220px;
+            margin-top: 5px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 30px;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ffca28;
+        }
+        .submit-btn {
+            background: linear-gradient(to right, #00796b, #004d40);
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 18px;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(to right, #004d40, #00251a);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">GLOBAL REVIEW</div>
+    <div class="review-container">
+        <h2>Write a Product Review</h2>
+        <form>
+            <div class="form-group">
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" placeholder="Enter product name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product-category">Product Category</label>
+                <select id="product-category" required>
+                    <option value="">Select Category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="appliances">Appliances</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="beauty">Beauty</option>
+                    <option value="sports">Sports</option>
+                    <option value="books">Books</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="review-title">Review Title</label>
+                <input type="text" id="review-title" placeholder="Enter a short title">
+            </div>
+
+            <div class="form-group">
+                <label for="review-text">Review</label>
+                <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="upload-image">Upload Image (Optional)</label>
+                <input type="file" id="upload-image" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" placeholder="Enter your name">
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Review</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

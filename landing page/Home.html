@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Review</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> GLOBAL REVIEW </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a   href="../sign_in/sign_in.html">Sign in</a>
+            <!-- <a href="../review/review.html">Write a review</a> -->
+            <div class="dropdown">
+                <a href="../category/category1.html">Categories ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">Electronics</a>
+                    <a href="#">Home & Kitchen</a>
+                    <a href="#">Beauty & Health</a>
+                    <a href="#">Automotive</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="all">
+    <section class="hero">
+        <h1>Know better, choose better.</h1>
+        <p>Reviews by people like you.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="What are you looking for?">
+            <button>Search</button>
+        </div>
+    </section>
+    <div class="box"></div>
+
+
+     <!-- Review Section -->
+     <section class="review-section">
+        <h2>Your opinion matters</h2>
+        <p>GlobalReview.com is a community of consumers helping each other make better purchasing decisions.</p>
+        <!-- <button class="review-button">Write a review</a></button> -->
+        <a href="../review/review.html" class="review-button">Write a review</a>
+    </section>
+    <div class="box"></div>
+
+     <!-- Popular Categories Section -->
+    <section class="categories-section">
+        <h2>Popular Categories</h2>
+        <p>Browse our most popular categories</p>
+
+        <!-- Category Grid -->
+
+        <div class="category-grid">
+            <div class="category-item" style="background-image: url('images/cars.jpg');">
+                <h3>Cars</h3>
+                <p>29,340 reviews</p>
+            </div>
+            <div class="category-item" style="background-image: url('images/coffee-machines.jpg');">
+                <h3>Coffee Machines</h3>
+                <p>17,010 reviews</p>
+            </div>
+            <div class="category-item" style="background-image: url('images/diet.jpg');">
+                <h3>Diet & Weight Loss Products</h3>
+                <p>9,002 reviews</p>
+            </div>
+            <div class="category-item" style="background-image: url('images/home-builders.jpg');">
+                <h3>Home Builders</h3>
+                <p>88,862 reviews</p>
+            </div>
+            <div class="category-item" style="background-image: url('images/prams.jpg');">
+                <h3>Prams & Strollers</h3>
+                <p>31,414 reviews</p>
+            </div>
+            <div class="category-item" style="background-image: url('images/tyres.jpg');">
+                <h3>Tyres</h3>
+                <p>8,216 reviews</p>
+            </div>
+            <div class="category-item" style="background-image: url('images/vacuum-cleaners.jpg');">
+                <h3>Vacuum Cleaners</h3>
+                <p>36,036 reviews</p>
+            </div>
+            <div class="category-item" style="background-image: url('images/washing-machines.jpg');">
+                <h3>Washing Machines</h3>
+                <p>24,870 reviews</p>
+            </div>
+        </div>
+    </section>
+    <div class="box"></div>
+      <!-- Featured Reviews Section -->
+      <section class="reviews-section">
+        <h2>Featured Reviews</h2>
+        <p>Browse some of our latest reviews</p>
+
+        <!-- Review Grid -->
+        <div class="review-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <h3>Arise Solar</h3>
+                <div class="reviewer-info">
+                    <img src="images/user1.jpg" alt="User Image">
+                    <div>
+                        <strong>Jeremy B.</strong> <span>South East Queensland, QLD</span>
+                        <div class="stars">★★★★★</div>
+                        <span class="time">1h ago</span>
+                    </div>
+                </div>
+                <p>Cody provided great customer service and acted promptly to resolve the issue with my solar inverter.</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <h3>Kmart Online Store</h3>
+                <div class="reviewer-info">
+                    <img src="images/user2.jpg" alt="User Image">
+                    <div>
+                        <strong>Janine C.</strong> <span>Perth, WA</span>
+                        <div class="stars">★☆☆☆☆</div>
+                        <span class="time">1h ago</span>
+                    </div>
+                </div>
+                <p>I ordered clothing online which was sourced from different stores with all items except for one shirt coming from one store...</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <h3>Snooze VIC, Springvale</h3>
+                <div class="reviewer-info">
+                    <img src="images/user3.jpg" alt="User Image">
+                    <div>
+                        <strong>Jeannine</strong>
+                        <div class="stars">★★★★★</div>
+                        <span class="time">1h ago</span>
+                    </div>
+                </div>
+                <p>Julia was the reason I went to this store and purchased my bed, mattress, bedside table and mattress protector...</p>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- Footer Disclaimer -->
+    <div class="footer-bottom">
+        <p>© 2025 GlobalReview.com.Pty. Ltd. All Rights Reserved.</p>
+        <p>General disclaimer: All third-party trademarks, images, and copyrights on this page are used for the purpose of comparative advertising, criticism, or review. 
+            This is a public forum presenting user opinions on selected products and businesses, and as such, the views expressed do not reflect the opinion of ProductReview.com.au. 
+            Further details in the <a href="#">disclaimer</a>.
+        </p>
+    </div>
+</footer>
+
+
+
+
+</body>
+<script>
+    function toggleMenu() {
+        document.querySelector('.navbar').classList.toggle('active');
+    }
+</script>
+</html>

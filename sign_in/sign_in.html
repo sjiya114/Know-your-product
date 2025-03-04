@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up</title>
+    <style>
+        :root {
+            --background-start: #0056b3;
+            --background-end: #003366;
+            --heading-color:  #003366;
+            --button-normal-start: #0056b3;
+            --button-normal-end: #003366;
+            --button-hover-start: #004d40;
+            --button-hover-end: #003366;
+            --text-color: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* background: linear-gradient(135deg, var(--background-start), var(--background-end)); */
+            background-color:#F8F9FA;
+            
+            transition: background 0.5s ease-in-out;
+        }
+        
+        .navbar {
+            width: 100%;
+            padding: 15px 200px;
+            background: var(--heading-color);
+            background: linear-gradient(135deg, var(--background-start), var(--background-end));
+            color: white;
+            font-size: 24px;
+            /* font-size: 1.8em; */
+            font-weight: bold;
+            letter-spacing: 1px;
+            /* font-weight: bold; */
+            text-align: left;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            position: relative;
+            z-index: 2;
+            margin-top: 80px;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            color: var(--heading-color);
+            color:#003366;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border 0.3s ease-in-out;
+        }
+        
+        .input-field:focus {
+            border: 1px solid var(--heading-color);
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--button-normal-start), var(--button-normal-end));
+            transition: background 0.3s ease-in-out;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, var(--button-hover-start), var(--button-hover-end));
+        }
+        
+        .toggle-link {
+            display: block;
+            margin-top: 15px;
+            color: var(--heading-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        
+        .toggle-link:hover {
+            color: var(--button-hover-end);
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+            z-index: 1;
+        }
+        
+        .active .overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">GLOBAL REVIEW</div>
+    <div class="overlay"></div>
+    
+    <div class="container" id="signInForm">
+        <h2>Sign In</h2>
+        <button class="btn">Login with Google</button>
+        <button class="btn">Login with Gmail</button>
+        <hr>
+        <form>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <a class="toggle-link" onclick="toggleForms()">Don't have an account? Sign up</a>
+    </div>
+    
+    <div class="container hidden" id="signUpForm">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" class="input-field" placeholder="Full Name" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="password" class="input-field" placeholder="Confirm Password" required>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <a class="toggle-link" onclick="toggleForms()">Already have an account? Sign in</a>
+    </div>
+
+    <script>
+        function toggleForms() {
+            document.getElementById('signInForm').classList.toggle('hidden');
+            document.getElementById('signUpForm').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+
+
