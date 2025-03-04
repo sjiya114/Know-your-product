@@ -13,34 +13,18 @@
         }
 
         body {
-            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            background: #F8F9FA;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
         }
-        /* .header {
-            background-color: #00796b;
-            padding: 15px;
-            font-size: 1.8em;
-            font-weight: bold;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: white;
-            width: 100%;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        } */
+    
         .header {
-            /* background-color: #4CAF50; */
-            background-color: #00796b;
+            background: linear-gradient(135deg,#0056b3 ,#003366 );
             padding: 15px ;
             padding-right:780px;
             font-size: 24px;
-            /* font-size: 1.8em; */
             font-weight: bold;
             letter-spacing: 1px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -55,7 +39,7 @@
         }
 
         .review-container {
-            background: white;
+            background:white;
             padding: 30px;
             width: 90%;
             max-width: 600px;
@@ -71,7 +55,7 @@
         .review-container h2 {
             text-align: center;
             margin-bottom: 25px;
-            color: #00796b;
+            color:#003366;
             font-size: 24px;
         }
         .form-group {
@@ -88,14 +72,14 @@
         input, textarea, select {
             width: 100%;
             padding: 12px;
-            border: 2px solid #b2dfdb;
+            border: 2px solid #3788de;
             border-radius: 10px;
             font-size: 14px;
             transition: 0.3s;
-            background: #f1f1f1;
+            background: white;
         }
         input:focus, textarea:focus, select:focus {
-            border-color: #00796b;
+            border-color: #0056b3;
             outline: none;
             box-shadow: 0px 0px 8px rgba(0, 121, 107, 0.3);
             background: white;
@@ -125,7 +109,7 @@
             color: #ffca28;
         }
         .submit-btn {
-            background: linear-gradient(to right, #00796b, #004d40);
+            background: linear-gradient(135deg,#0056b3 ,#003366 );
             color: white;
             border: none;
             padding: 14px;
@@ -136,7 +120,7 @@
             transition: 0.3s;
         }
         .submit-btn:hover {
-            background: linear-gradient(to right, #004d40, #00251a);
+            background: linear-gradient(135deg,#003366 ,#0056b3 );
         }
     </style>
 </head>
@@ -146,11 +130,6 @@
     <div class="review-container">
         <h2>Write a Product Review</h2>
         <form>
-            <div class="form-group">
-                <label for="user-name">Your Name</label>
-                <input type="text" id="user-name" placeholder="Enter your name" required>
-            </div>
-            
             <div class="form-group">
                 <label for="product-name">Product Name</label>
                 <input type="text" id="product-name" placeholder="Enter product name" required>

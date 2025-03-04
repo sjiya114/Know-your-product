@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color:#F8F9FA ;
 }
 
 .navbar {
@@ -16,7 +16,6 @@ body {
 
 }
 .navbar .logo {
-    /* font-size: 1.8em; */
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -69,14 +68,9 @@ body {
     background-color:#007BFF;
 }
 
-.all{
-    background-color: #F8F9FA;
 
-}
 .hero {
     background: url('https://source.unsplash.com/1600x900/?family,happy') no-repeat center center/cover;
-    /* background: linear-gradient(135deg, white, #F8F9FA); */
-    /* background-color:#F8F9FA ; */
     height: 60vh;
     display: flex;
     align-items: center;
@@ -126,8 +120,6 @@ body {
 .search-bar button {
     padding: 12px 20px;
     border: none;
-
-    /* background:  #004d40; */
     background-color:#007BFF;
     color: white;
     border-radius: 25px;
@@ -135,7 +127,6 @@ body {
     transition: 0.3s;
 }
 .search-bar button:hover {
-    /* background-color: #388E3C; */
     background-color: #0056b3;
 }
 @media (max-width: 768px) {
@@ -169,27 +160,20 @@ body {
 
 /* Review Section */
 .review-section {
-    text-align: center; /* Center align text */
-    padding: 50px 20px; /* Add spacing around the section */
-    /* background-color: #ffffff; White background */
-    /* background: linear-gradient(135deg, white,#F8F9FA); */
+    text-align: center; 
+    padding: 50px 20px; 
+
 }
 
 .review-section h2 {
-     font-size: 24px; /*Adjust font size
-    /* font-weight: bold; Make text bold */ */
-    /* color: #002d18; Dark green color */
-    /* font-size:2.5em; */
-    /* margin-bottom: 10px; */
+     font-size: 24px; 
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     color:#555;
 }
 
 .review-section p {
-    /* font-size: 16px; Set font size */
-    /* color: #333; Dark gray text */
-    /* margin: 10px 0 20px; Add spacing */
+
     font-size: 1.2em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -199,35 +183,28 @@ body {
 /* Button Styling */
 .review-button  {
     text-decoration: none;
-    background-color: #007BFF; /* Dark green background */
-    /* background-color:  #4CAF50; Dark green background */
-    color: white; /* White text */
-    font-size: 16px; /* Adjust font size */
-    padding: 10px 20px; /* Add padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Show pointer on hover */
-    font-weight: bold; /* Make text bold */
-    transition: 0.2s; /* Add smooth transition */
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-weight: bold; 
+    transition: 0.2s; 
 }
 
 .review-button:hover {
-    background-color:#0056b3; /* Slightly darker green on hover */
+    background-color:#0056b3;
 } 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
+
 
 /* Categories Section */
 .categories-section {
-    /* background: linear-gradient(135deg, #e0f7fa,#F8F9FA); */
+
     text-align: center;
     padding: 40px 20px;
-    /* background-color: white; */
+
 }
 
 .categories-section h2 {
@@ -253,7 +230,7 @@ body {
 /* Category Grid */
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 10px;
     padding: 0 50px;
 }
@@ -284,8 +261,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 61, 40, 0.6); Dark green overlay */
-    background-color:#007BFF; /* Dark green overlay */
+    background-color:#007BFF; 
     border-radius: 5px;
 }
 
@@ -300,20 +276,20 @@ body {
 /* Hover effect */
 .category-item:hover {
     transform: scale(1.05);
-    background-color:#003366; /* Slightly darker green on hover */
+    background-color:#003366; 
     cursor: pointer;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .category-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 768px) {
     .category-grid {
-        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+        grid-template-columns: repeat(1, 1fr); 
     }
 }
 
@@ -327,10 +303,10 @@ body {
 
 /* Reviews Section */
 .reviews-section {
-    /* background: linear-gradient(135deg, #e0f7fa, #F8F9FA); */
+  
     text-align: center;
     padding: 40px 20px;
-    /* background-color: white; */
+
 }
 
 .reviews-section h2 {

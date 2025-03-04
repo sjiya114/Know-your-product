@@ -12,8 +12,7 @@
             font-family: Arial, sans-serif;
         }
         body {
-            /* background-color: #f9f9f9; */
-            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            background-color: #F8F9FA;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -22,8 +21,8 @@
             padding: 20px;
         }
         .header {
-            /* background-color: #4CAF50; */
-            background-color: #00796b;
+        
+            background: linear-gradient(135deg,#0056b3 ,#003366 );
             padding: 15px ;
             padding-right:780px;
             font-size: 24px;
@@ -81,16 +80,17 @@
         }
         .suggestions button {
             background-color: #fff;
-            border: 1px solid  #00796b;
+            border: 1px solid #0056b3;
             padding: 8px 12px;
             border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
-            color: #00796b;
+            color:#0056b3;
             transition: 0.2s;
         }
         .suggestions button:hover {
-            background-color: #00796b;
+    
+            background-color: #0056b3;
             color: white;
         }
         .footer {
@@ -121,7 +121,6 @@
     <div class="container">
         <h2>What are you reviewing?</h2>
         <div class="search-box">
-            <!-- <input type="text" placeholder="Example: iPhone, Australia Post, Harvey Norman"> -->
             <a href="review2.html" class="custom-input" onclick="activateInput()"><input type="text" placeholder="Example: iPhone, Australia Post, Harvey Norman"></a>
             <input type="text" id="hidden-text-input" placeholder="Example: iPhone, Australia Post, Harvey Norman" style="display: none;" onblur="hideInput()">
             
